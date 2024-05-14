@@ -73,12 +73,12 @@ class MainActivity : AppCompatActivity() {
         val email = emailInput.text.toString()
         val phone = phoneInput.text.toString()
 
-//        if (name.isEmpty() || dateOfBirth.isEmpty() || nationality.isEmpty() ||
-//            email.isEmpty() || phone.isEmpty()
-//        ) {
-//            Toast.makeText(this, "Vui lòng điền đầy đủ thông tin.", Toast.LENGTH_SHORT).show()
-//            return
-//        }
+        if (name.isEmpty() || dateOfBirth.isEmpty() || nationality.isEmpty() ||
+            email.isEmpty() || phone.isEmpty()
+        ) {
+            Toast.makeText(this, "Vui lòng điền đầy đủ thông tin.", Toast.LENGTH_SHORT).show()
+            return
+        }
 
         if (!isEmailValid(email)) {
             Toast.makeText(this, "Vui lòng nhập đúng định dạng email.", Toast.LENGTH_SHORT).show()
